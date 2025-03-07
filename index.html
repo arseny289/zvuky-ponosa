@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автовоспроизведение звука</title>
+</head>
+<body>
+    <audio id="audio" src="ponos-mp3.mp3"></audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const audio = document.getElementById("audio");
+            audio.play().catch(error => console.log("Ошибка автозапуска:", error));
+        });
+    </script>
+</body>
+</html>
